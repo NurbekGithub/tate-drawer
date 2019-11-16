@@ -1,9 +1,9 @@
 header {
   flex: 0 0 100px;
-  background-image: url("./assets/pp.jpeg");
+  background-image: url("./assets/bg.jpeg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position-y: 10%;
+  background-position-y: 36.5%;
 }
 
 main {
@@ -28,7 +28,7 @@ footer {
   align-items: center;
 }
 
-footer > button {
+footer .btn {
   color: #000;
   text-transform: uppercase;
   text-decoration: none;
@@ -40,9 +40,35 @@ footer > button {
   cursor: pointer;
   margin: 0 10px;
   transition: all 0.4s ease 0s;
+  font: 400 13.3333px Arial;
 }
 
-footer > button:hover {
+footer .btn:hover {
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
   transition: all 0.4s ease 0s;
+}
+
+.close-btn {
+  position: absolute;
+  font-size: 20px;
+  width: 25px;
+  background-color: #ff9800;
+  height: 25px;
+  right: 5px;
+  top: 3px;
+  border: none;
+  border-radius: 50%;
+}
+
+.reference {
+  padding: 0 10px;
+}
+
+.reference .reference-sample {
+  display: flex;
+  align-items: center;
+}
+
+h5 {
+  margin: 0;
 }

@@ -1,5 +1,5 @@
-export function saveFile(data, filename, type) {
-  var file = new Blob([data], { type: type });
+export function saveFile(data, filename) {
+  var file = new Blob([data], { type: "text/plain" });
   if (window.navigator.msSaveOrOpenBlob)
     // IE10+
     window.navigator.msSaveOrOpenBlob(file, filename);

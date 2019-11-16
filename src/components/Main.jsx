@@ -1,6 +1,5 @@
 /* eslint-disable no-eval */
 import React from "react";
-import useLocalStorage from "../hooks/useLocalStorage";
 require("../svgComponents/rect");
 require("../svgComponents/circle");
 require("../svgComponents/line");
@@ -13,13 +12,11 @@ function getHtml(text) {
       .map(eval)
       .join("\n");
   } catch {
-    return <p>...</p>;
+    return "";
   }
 }
 
-export default function Main() {
-  const [code, setCode] = useLocalStorage("code", "");
-
+export default function Main({ code, setCode }) {
   return (
     <main>
       <textarea
