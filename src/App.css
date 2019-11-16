@@ -1,22 +1,48 @@
-.App {
-  text-align: center;
+header {
+  flex: 0 0 100px;
+  background-image: url("./assets/pp.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 10%;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
+  flex: 1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+main > .engine {
+  flex: 0 0 50%;
+  border-right: 1px solid #aaa;
+}
+
+main > .canvas {
+  flex: 0 0 50%;
+  border-left: 1 px solid #aaa;
+}
+
+footer {
+  flex: 0 0 30px;
+  background-color: teal;
+  display: flex;
+  align-items: center;
+}
+
+footer > button {
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #d6d6d6;
+  padding: 5px 20px;
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: all 0.4s ease 0s;
+}
+
+footer > button:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  transition: all 0.4s ease 0s;
 }
